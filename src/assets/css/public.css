@@ -1,0 +1,363 @@
+.i-right {
+  display: inline-block;
+  height: 0.6rem;
+  width: 0.6rem;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: 0.6rem;
+  background-image: url("../../../static/img/icon_right@2x.png");
+}
+.i-close {
+  display: inline-block;
+  height: 1.2rem;
+  width: 1.2rem;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: 1.2rem;
+  background-image: url("../../../static/img/icon_close@2x.png");
+}
+.starbox {
+  display: inline-block;
+  height: 0.7rem;
+  line-height: 0.7rem;
+}
+.starbox .i-star {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  background-size: 0.7rem;
+  background-repeat: no-repeat;
+  vertical-align: inherit;
+  margin-right: 0.3rem;
+}
+.starbox .i-star-colour {
+  background-image: url("../../../static/img/icon_xing_colour.png");
+}
+.starbox .i-star-gray {
+  background-image: url("../../../static/img/icon_xing_gray.png");
+}
+.starbox .i-star-half {
+  background-image: url("../../../static/img/icon_xing_half.png");
+}
+/* 长按钮 */
+.btn {
+  width: 100%;
+  border-radius: 8px;
+  line-height: 2.5rem;
+  height: 2.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #fff;
+  display: block;
+}
+.btnboxflex {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0.8rem;
+  left: 0;
+}
+.btnbox {
+  padding: 0.8rem;
+}
+.paybtn {
+  width: 100%;
+  border-radius: 8px;
+  line-height: 2.5rem;
+  height: 2.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #fff;
+  display: block;
+  background: -moz-linear-gradient(135deg, #FD7E00 0%, #E62129 100%);
+  background: -webkit-gradient(linear, left right, left right, color-stop(0%, #FD7E00), color-stop(100%, #E62129));
+  background: -webkit-linear-gradient(135deg, #FD7E00 0%, #E62129 100%);
+  background: -o-linear-gradient(135deg, #FD7E00 0%, #E62129 100%);
+  background: -ms-linear-gradient(135deg, #FD7E00 0%, #E62129 100%);
+  background: linear-gradient(135deg, #FD7E00 0%, #E62129 100%);
+}
+.restbtn {
+  width: 100%;
+  border-radius: 8px;
+  line-height: 2.5rem;
+  height: 2.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #fff;
+  display: block;
+  background-color: #ccc;
+}
+.canclebtn {
+  width: 100%;
+  border-radius: 8px;
+  line-height: 2.5rem;
+  height: 2.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #fff;
+  display: block;
+  background-color: #fff;
+  color: #666;
+}
+/* 长按钮 */
+.whitebtn {
+  width: 3.9rem;
+  height: 1.6rem;
+  text-align: center;
+  line-height: 1.6rem;
+  font-size: 0.6rem;
+  color: #333333;
+  background-color: #fff;
+  border: 1px solid #E4E4E4;
+  border-radius: 8px;
+}
+.tag {
+  display: inline-block;
+  font-size: 0.6rem;
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  color: #666;
+  text-align: center;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  padding: 0 1.15rem;
+  margin-right: 0.5rem;
+}
+.ulcard {
+  padding: 0 0.8rem;
+  background-color: #fff;
+  margin-bottom: 0.5rem;
+}
+.ulcard li {
+  border-bottom: 1px solid #e4e4e4;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  width: 100%;
+  font-size: 0.8rem;
+}
+.ulcard li .emleft {
+  display: inline-block;
+  width: 3.5rem;
+}
+.ulcard li:last-Child {
+  border-bottom: none;
+}
+.active,
+.textred {
+  color: #E62129 !important;
+}
+.bkhblue {
+  color: #0070FF !important;
+}
+.bkhradius {
+  border-radius: 8px;
+}
+.bkhtips {
+  color: #0070FF;
+  font-size: 0.6rem;
+  text-align: right;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-column {
+  flex-direction: column;
+}
+.radiobox {
+  border: 1px solid #E62129;
+  border-radius: 100px;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  position: relative;
+}
+.radiobox .i-radio {
+  height: 12px;
+  width: 12px;
+  background-color: #E62129;
+  border-radius: 100px;
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+.i-radio2 {
+  border: 1px solid #e4e4e4;
+  border-radius: 100px;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+.boderno {
+  border-bottom: none!important;
+}
+.cardtitle {
+  background-color: #fff;
+  padding: 2.5rem 0;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.agreementtips {
+  color: #0070FF !important;
+  font-size: 0.6rem;
+  text-align: right;
+  margin-top: 0.8rem;
+}
+.headbox {
+  position: fixed;
+  width: 100%;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  top: 0;
+  background: #fff;
+  padding: 0 0.8rem;
+  left: 0;
+  z-index: 6;
+}
+.headbox .navbar {
+  display: flex;
+  display: -webkit-flex;
+  width: 100%;
+}
+.headbox .navleft {
+  flex: 1;
+  text-align: left;
+}
+.headbox .navleft .i-back {
+  display: inline-block;
+  height: 1.2rem;
+  width: 1.2rem;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background: url("../../../static/img/icon_left@2x.png") no-repeat;
+  background-size: 1.2rem;
+}
+.headbox .navcenter {
+  flex: 6;
+  text-align: center;
+}
+.headbox .navcenter .title {
+  font-size: 0.9rem;
+  color: "#333";
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+.bgfbtn {
+  width: 4.9rem;
+  height: 1.8rem;
+  display: inline-block;
+  border-radius: 19px;
+  line-height: 1.8rem;
+  background-color: #fff;
+  color: #E62129;
+  font-size: 0.7rem;
+  border: #E62129 solid 1px;
+}
+.bgredbtn {
+  width: 4.9rem;
+  height: 1.8rem;
+  display: inline-block;
+  border-radius: 19px;
+  line-height: 1.8rem;
+  background-color: #E62129;
+  color: #fff;
+  font-size: 0.7rem;
+  border: #E62129 solid 1px;
+}
+.centenbox {
+  text-align: center;
+}
+.cellbox .van-cell-group__title {
+  font-size: 0.6rem;
+  padding: 0.6rem 0.8rem;
+}
+.cellbox .colorgray {
+  color: #333;
+}
+.cellbox .colorblue {
+  color: #0070FF !important;
+}
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.topred {
+  background-image: linear-gradient(135deg, #FB6066 0%, #E62129 100%) !important;
+  height: 7.5rem;
+  position: relative;
+}
+.topred .pricecard {
+  position: absolute;
+  background-color: #fff;
+  text-align: center;
+  padding: 1.6rem;
+  border-radius: 8px;
+  top: 2.7rem;
+  left: 0.8rem;
+  right: 0.8rem;
+  height: 9.1rem;
+}
+.kefutips {
+  position: fixed;
+  display: blank;
+  width: 100%;
+  text-align: center;
+  bottom: 20px;
+}
+.kefutips .i-msg {
+  display: inline-block;
+  height: 1.2rem;
+  width: 1.2rem;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: 1.2rem;
+  background-image: url("../../../static/img/icon_kefu@2x.png");
+}
+.kefutips span {
+  font-size: 0.7rem;
+  color: #666;
+}
+.i-jt {
+  background-image: url("../../../static/img/i_jt.png") !important;
+}
+.i-zg {
+  background-image: url("../../../static/img/i_zg.png") !important;
+}
+.top5 {
+  margin-top: 0.5rem;
+}
+.btmfoot3 {
+  padding-bottom: 3rem;
+}
+.logintitle {
+  padding: 2rem 0;
+}
+.logintitle p {
+  font-size: 1.2rem;
+  color: #333333;
+}
+.logintitle em {
+  display: inline-block;
+  font-size: 0.7rem;
+  color: #999999;
+}
+.fullscreen {
+  background: #fff;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}

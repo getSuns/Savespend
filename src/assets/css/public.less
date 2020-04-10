@@ -1,0 +1,385 @@
+//图标样式
+.icon(@size:1.2rem){
+    display: inline-block;
+    height: @size;
+    width: @size;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: @size;
+}
+//向右小箭头
+.i-right{
+    .icon(.6rem);
+    background-image:url("../../../static/img/icon_right@2x.png");
+}
+.i-close{
+    .icon;
+    background-image:url("../../../static/img/icon_close@2x.png");
+}
+//评分星星
+.starbox{
+    display: inline-block;
+    height: .7rem;
+    line-height: .7rem;
+    .i-star{
+        display: inline-block;
+        width: 0.7rem;
+        height: .7rem;
+        background-size: .7rem;
+        background-repeat: no-repeat;
+        vertical-align: inherit;
+        margin-right: .3rem;
+    }
+    .i-star-colour{
+        background-image: url("../../../static/img/icon_xing_colour.png");
+    }
+    .i-star-gray{
+        background-image: url("../../../static/img/icon_xing_gray.png");
+    }
+    .i-star-half{
+        background-image: url("../../../static/img/icon_xing_half.png");
+    }
+}
+//按钮样式
+/* 长按钮 */
+.btn{
+    width: 100%;
+    border-radius: 8px;
+    line-height: 2.5rem;
+    height: 2.5rem;
+    font-size:.8rem;
+    text-align: center;
+    color: #fff;
+    display: block;
+}
+.btnboxflex{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    padding: .8rem;
+    left: 0;
+}
+.btnbox{
+    padding: .8rem;
+}
+.paybtn{
+    .btn;
+    background: -moz-linear-gradient(135deg, #FD7E00 0%, #E62129 100%);
+    background: -webkit-gradient(linear, left right, left right, color-stop(0%,#FD7E00), color-stop(100%,#E62129));
+    background: -webkit-linear-gradient(135deg, #FD7E00 0%, #E62129 100%);
+    background: -o-linear-gradient(135deg, #FD7E00 0%, #E62129 100%);
+    background: -ms-linear-gradient(135deg, #FD7E00 0%, #E62129 100%);
+    background: linear-gradient(135deg, #FD7E00 0%, #E62129 100%);
+}
+.restbtn{
+    .btn;
+    background-color: #ccc;
+}
+.canclebtn{
+    .btn;
+    background-color: #fff;
+    color: #666;
+}
+/* 长按钮 */
+//小按钮
+.whitebtn{
+    width: 3.9rem;
+    height: 1.6rem;
+    text-align: center;
+    line-height: 1.6rem;
+    font-size: .6rem;
+    color: #333333;
+    background-color: #fff;
+    border: 1px solid #E4E4E4;
+    border-radius: 8px;
+}
+//
+.tag{
+    display: inline-block;
+    font-size: .6rem;
+    background-color: #f5f5f5;
+    border-radius: 16px;
+    color: #666;
+    text-align: center;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    padding: 0 1.15rem;
+    margin-right: .5rem;
+}
+//
+.ulcard{
+    padding: 0 .8rem;
+    background-color: #fff;
+    margin-bottom: .5rem;
+    li{
+        border-bottom: 1px solid #e4e4e4;
+        height: 2.6rem;
+        line-height: 2.6rem;
+        width: 100%;
+        font-size: .8rem;
+        .emleft{
+            display: inline-block;
+            width: 3.5rem;
+        }
+
+    }
+    li:last-Child{
+        border-bottom:none;
+    }
+}
+//当前选中色
+.active,.textred{
+    color: #E62129!important;
+}
+//掰开花蓝
+.bkhblue{
+    color:#0070FF!important;
+}
+.bkhradius{
+    border-radius: 8px;
+}
+.bkhtips{
+    color: #0070FF;
+    font-size: .6rem;
+    text-align: right;
+}
+//
+// div,p{
+//     text-align: left;
+// }
+
+.flex{
+    display: flex;
+    justify-content:space-between;
+  }
+  .flex-column{
+    flex-direction:column;
+  }
+
+//单选框
+// <span class="typeradio"><span class="radiobox"><i class="i-radio"></i></span></span>
+// <span class="typeradio"><i class="i-radio2"></i></span>
+//选中状态
+.radiobox{
+    border: 1px solid #E62129;
+    border-radius: 100px;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    .i-radio{
+        height: 12px;
+        width: 12px;
+        background-color: #E62129;
+        border-radius: 100px;
+        display: inline-block;
+        position:absolute;
+        top: 3px;
+        left: 3px;
+    }
+}
+//未选中状态
+.i-radio2{
+    border: 1px solid #e4e4e4;
+    border-radius: 100px;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+}
+//
+.bdrfff(@px:0){
+    background-color: #fff;
+    padding:@px .8rem;
+}
+//去掉边框
+.boderno{
+    border-bottom:none!important;
+}
+//支付模块title样式
+.cardtitle{
+    background-color: #fff;
+    padding:2.5rem 0;
+    text-align: center;
+    font-size: 1.1rem;
+ }
+ //协议/提示样式
+ .agreementtips{
+    .bkhblue;
+    font-size: .6rem;
+    text-align: right;
+    margin-top: .8rem;
+}
+//头部简单样式
+.headbox{
+    position: fixed;
+    width: 100%;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    top: 0;
+    background: #fff;
+    padding: 0 .8rem;
+    left: 0;
+    z-index: 6;
+     .navbar{
+        display: flex;
+        display: -webkit-flex;
+        width: 100%;
+    }
+    .navleft{
+        flex: 1;
+        text-align: left;
+        .i-back{
+            .icon;
+            background: url("../../../static/img/icon_left@2x.png") no-repeat;
+            background-size: 1.2rem;
+        }
+    }
+    .navcenter{
+        flex: 6;
+        text-align: center;
+        .title{
+            font-size: .9rem;
+            color:"#333";
+            font-weight: bold;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+        }
+    }
+ }
+ //我的按钮样式
+ .mybtn(@bgcolor,@color,@boder:#E62129,@fsize:0.7rem)
+ {
+     width: 4.9rem;
+     height: 1.8rem;
+     display: inline-block;
+     border-radius: 19px;
+     line-height: 1.8rem;
+     background-color: @bgcolor;
+     color:@color;
+     font-size: @fsize;
+     border: @boder solid 1px;
+ }
+ .bgfbtn{
+     .mybtn(#fff,#E62129)
+ }
+ .bgredbtn{
+    .mybtn(#E62129,#fff)
+ }
+ .centenbox{
+     text-align: center;
+ }
+ .cellbox{
+    .van-cell-group__title{
+        font-size: .6rem;
+        padding: .6rem .8rem;
+    }
+    .colorgray{
+        color: #333;
+    }
+    .colorblue{
+        color: #0070FF!important;
+    }
+ }
+ //左中右样式
+ .flexbox{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+ }
+ .flexleft(@flexsize:1){
+    -webkit-box-flex: @flexsize;
+    -ms-flex: @flexsize;
+    flex: @flexsize;
+ }
+ .flexmiddle(@flexsize:2){
+    -webkit-box-flex: @flexsize;
+    -ms-flex: @flexsize;
+    flex: @flexsize;
+ }
+ .flexright(@flexsize:1){
+    -webkit-box-flex: @flexsize;
+    -ms-flex: @flexsize;
+    flex: @flexsize;
+ }
+ //scorebox
+ //我的头部展示
+ .topred{
+    background-image: linear-gradient(135deg, #FB6066 0%, #E62129 100%)!important;
+    height: 7.5rem;
+    position: relative;
+    .pricecard{
+        position: absolute;
+        background-color: #fff;
+        text-align: center;
+        padding: 1.6rem;
+        border-radius: 8px;
+        top:2.7rem;
+        left: .8rem;
+        right: .8rem;
+        height: 9.1rem;
+    }
+}
+//底部客服提示
+.kefutips{
+    position: fixed;
+    display:blank;
+    width: 100%;
+    text-align: center;
+    bottom: 20px;
+    .i-msg{
+        .icon;
+        background-image:url("../../../static/img/icon_kefu@2x.png");
+    }
+    span{
+       font-size: .7rem;
+       color:#666; 
+    }
+}
+
+//银行卡类型小图标
+.i-jt{
+    background-image: url("../../../static/img/i_jt.png")!important;
+}
+.i-zg{
+    background-image: url("../../../static/img/i_zg.png")!important;
+}
+
+//end
+.top5{
+    margin-top: .5rem;
+}
+//距底  ..部
+.btmfoot3{
+    padding-bottom: 3rem;
+  }
+//登录页头部样式
+.logintitle{
+    padding: 2rem 0;
+    p{
+        font-size: 1.2rem;
+        color: #333333;
+    }
+    em{
+        display: inline-block;
+        font-size: .7rem;;
+        color: #999999;
+    }
+}
+.fullscreen{
+    background: #fff;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>savespend</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+<script>
+     (function() {
+      var oHtml = document.documentElement
+
+      function getSize() {
+        var screenWidth = window.screen.width
+        if (screenWidth >= 640) {
+            oHtml.style.fontSize = '30px'
+        } else if (screenWidth < 320) {
+            oHtml.style.fontSize = '20px'
+        } else {
+            oHtml.style.fontSize = screenWidth / 375 * 20 + 'px'
+        }
+      }
+
+      getSize()
+
+      window.onresize = function () {
+        getSize()
+      }
+     }())
+    </script>
+<style>
+    html{
+      height: 100%;
+    }
+  </style>
