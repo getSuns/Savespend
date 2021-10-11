@@ -37,7 +37,7 @@ export default {
  },
   methods: {
     onLoad() {
-      // 异步更新数据
+      // 异步更新数据  //
       setTimeout(() => {
         this.getgoods();
         console.log("加载中运行")
